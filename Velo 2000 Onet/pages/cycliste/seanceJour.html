@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Velo 2000 Onet</TITLE>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../../images/favicon/favicon.ico">
+
+
+<!-- Lien bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+<!-- Lien CSS -->
+<link href="../../css/style.css" rel="stylesheet">
+
+<!-- Lien font awesome -->
+<link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+
+</HEAD>
+<BODY>
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="seanceJour.html">Vélo 2000 Onet</a>
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="seanceJour.html">Séance du jour</a></li>
+			<li><a href="plannification.html">Plannification</a></li>
+			<li><a href="chargeEntrainement.html">Charge d'entrainement</a></li>
+			<li><a href="fichePilote.html">Fiche pilote</a></li>
+		</ul>
+		<ul class="nav navbar-nav deco">
+			<li><a href="#">Se déconnecter</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<h1><i class="fa fa-comment" aria-hidden="true"></i> Séance du 05/09/2017</h1>
+	<form>
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-10 col-sm-offset-1">
+			<h3>Description de la sceance :</h3>
+			Macrocylcle:  ppo<br/>Mesocycle:  qualité aérobique<br/>Microcyle:  micro 1
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-10 col-sm-offset-1">
+			<h3>Commentaire sur la scéance :</h3>
+			<textarea name="commentaire" class="form-control"></textarea>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-6 col-sm-offset-1">
+			<h3>Durée de la scéance :</h3>
+			<div class="input-group col-sm-5">
+				<input type="text" name="dureeSeanceHeures" class="form-control">
+				<span class="input-group-addon">Heures</span>
+			</div><br />
+			<div class="input-group col-sm-5">
+				<input type="text" name="dureeSeanceMinutes" class="form-control">
+				<span class="input-group-addon">Minutes</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-5 col-sm-offset-1">
+			<h3>Evaluation générale de la scéance :</h3>
+			<select class="form-control" name="noteEndurance">
+				<option>1</option> 
+				<option>2</option> 
+				<option>3</option> 
+				<option>4</option> 
+				<option>5</option> 
+				<option>6</option> 
+				<option>7</option> 
+				<option>8</option> 
+				<option>9</option> 
+				<option>10</option>
+			</select>
+		</div>
+	</div>
+	<br />
+	<br />
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-5 col-sm-offset-1">
+			<input type="submit" value="Enregistrer" class="btn btn-success"> 
+		</div>
+	</div>
+	</form>
+</div>
+
+</BODY>
+</HTML>

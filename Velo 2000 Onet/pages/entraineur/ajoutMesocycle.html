@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Velo 2000 Onet - Suivi des coureurs</TITLE>
+
+
+<script src="../../lib/jquery/jquery-3.2.1.min.js"></script>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../../images/favicon/favicon.ico">
+
+<!-- Lien bootstrap et jquery (pour menu) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Lien bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<script src="../../lib/bootstrap/bootstrap.min.js"></script>
+
+<!-- Lien CSS -->
+<link href="../../css/style.css" rel="stylesheet">
+
+<!-- Lien font awesome -->
+<link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+
+
+<!-- Import du plugin toggle button bootstrap -->
+<script src="../../lib/bootstrap-toggle-master/js/bootstrap-toggle.js"></script>
+<link href="../../lib/bootstrap-toggle-master/css/bootstrap-toggle.css" rel="stylesheet">
+	
+</HEAD>
+<BODY>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="suiviCoureur.html">Vélo 2000 Onet - Entraineur</a>
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="suiviCoureur.html">Suivi des cyclistes</a></li>
+			<!-- Menu déroulant pour la gestion des modèles -->
+			<li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Gestion des modèles<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="gestionPlannification.html">Plannification</a></li>
+                            <li><a href="gestionMacrocycle.html">Macrocycle</a></li>
+                            <li><a href="gestionMesocycle.html">Mésocycle</a></li>
+                            <li><a href="gestionMicrocycle.html">Microcycle</a></li>
+                        </ul>
+                    </li>
+			<li><a href="saisiePilote.html">Ajouter un cycliste</a></li>
+		</ul>
+		<ul class="nav navbar-nav deco">
+			<li><a href="#">Se déconnecter</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<h1>Ajouter un mésocycle</h1>
+	<br />
+	<br />
+	
+	<div class="col-sm-offset-1 col-sm-3">
+		
+		Titre : <input type="text" name="titre" class="form-control" /><br />
+		Type : <input type="text" name="type" class="form-control" /><br />
+		Durée : <select>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select> Semaines
+		<br />
+		<br />
+		<div>
+			type1 micro<br />
+			type2 micro<br />
+			<b>type3 micro</b><br />
+			type4 micro<br />
+			type5 micro<br />
+		</div>
+		
+	</div>
+	
+	<div class="col-sm-4">
+		<table class="table">
+			<tr>
+				<th>Titre</th>
+				<th>Type</th>
+				<th>Ajouter</th>
+			</tr>
+			<tr>
+				<td>titre1 micro</td>
+				<td>type3 micro</td>
+				<td><i class="fa fa-plus" aria-hidden="true"></i></td>
+			</tr>
+			<tr>
+				<td>titre2 micro</td>
+				<td>type3 micro</td>
+				<td><i class="fa fa-plus" aria-hidden="true"></i></td>
+			</tr>
+			<tr>
+				<td>titre3 micro</td>
+				<td>type3 micro</td>
+				<td><i class="fa fa-plus" aria-hidden="true"></i></td>
+			</tr>
+			<tr>
+				<td>titre4 micro</td>
+				<td>type3 micro</td>
+				<td><i class="fa fa-plus" aria-hidden="true"></i></td>
+			</tr>
+			
+		</table>
+	</div>
+	
+	<div class="col-sm-3">	
+	
+		<div class="input-group"><input type="text" readonly="readonly" value="titre micro add - type" class="form-control"><span class="input-group-addon"><i class="fa fa-times" aria-hidden="true"></i></span></div><br/>
+		<div class="input-group"><input type="text" readonly="readonly" value="titre micro add - type" class="form-control"><span class="input-group-addon"><i class="fa fa-times" aria-hidden="true"></i></span></div><br/>
+		<div class="input-group"><input type="text" readonly="readonly" value="" class="form-control"><span class="input-group-addon"><i class="fa fa-times" aria-hidden="true"></i></span></div><br/>
+		<div class="input-group"><input type="text" readonly="readonly" value="" class="form-control"><span class="input-group-addon"><i class="fa fa-times" aria-hidden="true"></i></span></div><br/>
+		<div class="input-group"><input type="text" readonly="readonly" value="" class="form-control"><span class="input-group-addon"><i class="fa fa-times" aria-hidden="true"></i></span></div><br/>
+		
+		
+		<input type="submit" class="btn btn-primary form-control" value="Effacer"><br /><br />
+		<input type="submit" class="btn btn-success form-control" value="Créer">
+	</div>
+	
+	
+	
+	
+</div>
+
+
+</BODY>
+</HTML>

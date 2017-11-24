@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Velo 2000 Onet - Suivi des coureurs</TITLE>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../../images/favicon/favicon.ico">
+
+<!-- Lien bootstrap et jquery (pour menu) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Lien bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+<!-- Lien CSS -->
+<link href="../../css/style.css" rel="stylesheet">
+
+<!-- Lien font awesome -->
+<link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+</HEAD>
+<BODY>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="suiviCoureur.html">Vélo 2000 Onet - Entraineur</a>
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="suiviCoureur.html">Suivi des cyclistes</a></li>
+			<!-- Menu déroulant pour la gestion des modèles -->
+			<li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Gestion des modèles<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="gestionPlannification.html">Plannification</a></li>
+                            <li><a href="gestionMacrocycle.html">Macrocycle</a></li>
+                            <li><a href="gestionMesocycle.html">Mésocycle</a></li>
+                            <li><a href="gestionMicrocycle.html">Microcycle</a></li>
+                        </ul>
+                    </li>
+			<li><a href="saisiePilote.html">Ajouter un cycliste</a></li>
+		</ul>
+		<ul class="nav navbar-nav deco">
+			<li><a href="#">Se déconnecter</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	
+	<h1><i class="fa fa-user-plus" aria-hidden="true"></i> Ajout d'un coureur</h1>
+	
+	<br />
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-10 col-sm-offset-1">
+			<form>
+				Nom : <input type="text" name="nom" placeholder="Nom" class="form-control"/><br />
+				Prénom : <input type="text" name="prenom" placeholder="Prénom" class="form-control"/><br />
+				Email : <input type="email" name="email" placeholder="email@email.com" class="form-control"/><br />
+				Date de naissance : <input type="date" name="dateNaiss" id="dateNaiss" placeholder="aaaa-mm-jj" class="form-control"/><br />
+				<input type="submit" value="Valider" class="btn btn-primary" />
+			</form>
+		</div>
+	</div>
+</div>
+
+
+</BODY>
+</HTML>

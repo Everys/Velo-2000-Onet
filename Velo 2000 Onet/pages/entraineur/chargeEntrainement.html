@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Velo 2000 Onet - Suivi des coureurs</TITLE>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../../images/favicon/favicon.ico">
+
+<!-- Lien bootstrap et jquery (pour menu) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Lien bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+<!-- Lien CSS -->
+<link href="../../css/style.css" rel="stylesheet">
+
+<!-- Lien font awesome -->
+<link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+<!-- Lien vers la librairie chart.js -->
+<script src="../../lib/chart/chart.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+
+</HEAD>
+<BODY>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="suiviCoureur.html">Vélo 2000 Onet - Entraineur</a>
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="suiviCoureur.html">Suivi des cyclistes</a></li>
+			<!-- Menu déroulant pour la gestion des modèles -->
+			<li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Gestion des modèles<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="gestionPlannification.html">Plannification</a></li>
+                            <li><a href="gestionMacrocycle.html">Macrocycle</a></li>
+                            <li><a href="gestionMesocycle.html">Mésocycle</a></li>
+                            <li><a href="gestionMicrocycle.html">Microcycle</a></li>
+                        </ul>
+                    </li>
+			<li><a href="saisiePilote.html">Ajouter un cycliste</a></li>
+		</ul>
+		<ul class="nav navbar-nav deco">
+			<li><a href="#">Se déconnecter</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<h1>Sélectionner une date</h1>
+	<input type="date" name="date">
+	
+	<div class="row">
+		<div class="col-sm-6">
+		<br />
+			<h1>Macrocycle<span class="dateCharge"> (01/10/17 - 31/09/18)</span></h1>
+			<canvas id="macro" width="400" height="400"></canvas>
+			
+		</div>
+		<div class="col-sm-6">
+			<br />
+			<h1>Mésocycle<span class="dateCharge"> (01/10/17 - 31/12/17)</span></h1>
+			<canvas id="meso" width="400" height="400"></canvas>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<br />
+			<h1>Microcycle<span class="dateCharge"> (01/10/17 - 30/10/17)</span></h1>
+			<canvas id="micro" width="400" height="400"></canvas>
+		</div>
+		<div class="col-sm-6">
+			<br />
+			<h1>Jours<span class="dateCharge"> (04/10/17 - 10/10/17)</span></h1>
+			<canvas id="jour" width="400" height="400"></canvas>
+		</div>
+	</div>
+	<br />
+</div>
+
+<script>
+	
+	var macroChart = document.getElementById("macro").getContext("2d");
+	var valeur = [120, 80, 144, 102];
+	var nom = ["macro1", "macro2", "macro3", "macro4"];
+	var data = {
+		labels: nom, // axe x
+
+		datasets: [
+			{
+				//label: "My First dataset",
+				fillColor: ["rgba(220,220,0,0.8)", "rgba(220,220,220,0.8)", "rgba(220,220,220,0.8)", "rgba(220,220,220,0.8)"],
+				strokeColor: "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(200,220,220,0.44)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data: valeur // axe y
+			}
+		]
+	};
+	var chart = new Chart(macroChart).Bar(data);
+	
+	
+	
+	var mesoChart = document.getElementById("meso").getContext("2d");
+	var valeur = [120, 80, 144, 102];
+	var nom = ["meso1", "meso2", "meso3", "meso4"];
+	var data = {
+		labels: nom, // axe x
+
+		datasets: [
+			{
+				//label: "My First dataset",
+				fillColor: ["rgba(220,0,220,0.8)", "rgba(220,220,220,0.8)", "rgba(220,220,220,0.8)", "rgba(220,220,220,0.8)"],
+				strokeColor: "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(200,220,220,0.44)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data: valeur // axe y
+			}
+		]
+	};
+	var chart = new Chart(mesoChart).Bar(data);
+	
+	
+	var microChart = document.getElementById("micro").getContext("2d");
+	var valeur = [120, 80, 144, 102];
+	var nom = ["micro1", "micro2", "micro3", "micro4"];
+	var data = {
+		labels: nom, // axe x
+
+		datasets: [
+			{
+			
+				//label: "My First dataset",
+				fillColor: [ "rgba(220,220,220,0.8)", "rgba(0,220,220,0.8)", "rgba(220,220,220,0.8)", "rgba(220,220,220,0.8)",],
+				strokeColor: "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(200,220,220,0.44)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data: valeur // axe y
+			}
+		]
+	};
+	var chart = new Chart(microChart).Bar(data);
+	
+	
+	var jourChart = document.getElementById("jour").getContext("2d");
+	var valeur = [120, 80, 144, 102, 120, 80, 144];
+	var nom = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+	var data = {
+		labels: nom, // axe x
+
+		datasets: [
+			{
+			
+				//label: "My First dataset",
+				fillColor: [ "rgba(220,220,220,0.8)", "rgba(220,220,220,0.8)", "rgba(220,220,220,0.8)","rgba(0,220,220,0.8)", "rgba(220,220,220,0.8)"],
+				strokeColor: "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(200,220,220,0.44)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data: valeur // axe y
+			}
+		]
+	};
+	var chart = new Chart(jourChart).Bar(data);
+	
+
+	
+</script>
+
+</BODY>
+</HTML>

@@ -1,0 +1,114 @@
+	<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Velo 2000 Onet - Suivi des coureurs</TITLE>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../../images/favicon/favicon.ico">
+
+<!-- Lien bootstrap et jquery (pour menu) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Lien bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+<!-- Lien CSS -->
+<link href="../../css/style.css" rel="stylesheet">
+
+<!-- Lien font awesome -->
+<link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+</HEAD>
+<BODY>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="suiviCoureur.html">Vélo 2000 Onet - Entraineur</a>
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="suiviCoureur.html">Suivi des cyclistes</a></li>
+			<!-- Menu déroulant pour la gestion des modèles -->
+			<li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Gestion des modèles<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="gestionPlannification.html">Plannification</a></li>
+                            <li><a href="gestionMacrocycle.html">Macrocycle</a></li>
+                            <li><a href="gestionMesocycle.html">Mésocycle</a></li>
+                            <li><a href="gestionMicrocycle.html">Microcycle</a></li>
+                        </ul>
+                    </li>
+			<li><a href="saisiePilote.html">Ajouter un cycliste</a></li>
+		</ul>
+		<ul class="nav navbar-nav deco">
+			<li><a href="#">Se déconnecter</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<h1><i class="fa fa-user-plus" aria-hidden="true"></i> Test pilote</h1>
+	
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-7 col-sm-offset-1">
+			<form>
+				<br />
+				<i class="fa fa-arrow-right" aria-hidden="true"></i> Ajout d'un test pilote pour <span class="btn btn-primary"><a href="suiviCoureur.html" class="aSimple">Sophia Tirana</a></span>
+				<h2>Données générales :</h2>
+				Age : <input type="text" name="dateNaiss" class="form-control automatique" readonly="readonly" readonly="readonly"/><br />
+				Catégorie FFC : <input type="text" name="categorieFFC" class="form-control automatique" readonly="readonly"/><br />
+				Date du test : <input type="date" name="dateTest" class="form-control"/><br />
+				Lieu du test : <input type="text" name="lieuTest" class="form-control"/><br />
+				Température salle de test : <div class="input-group"><input type="text" name="temp" class="form-control"><span class="input-group-addon">°C</span></div><br/>
+				Humidité salle de test : <div class="input-group"><input type="text" name="humidite" class="form-control"><span class="input-group-addon">%</span></div><br/>
+				<h2>Anthropometrie :</h2>
+				Taille : <div class="input-group"><input type="text" name="taille" class="form-control"><span class="input-group-addon">cm</span></div><br/>
+				Poids avant le test : <div class="input-group"><input type="text" name="poid" class="form-control"><span class="input-group-addon">kilogrammes</span></div><br/>
+				<h2>Test de vélocité :</h2>
+				Fréquence max. de pédalage : <div class="input-group"><input type="text" name="fMaxPedalageVelocite" class="form-control"><span class="input-group-addon">RPM</span></div><br/>
+				<h2>Test Force/Vitesse :</h2>
+				<h3>Première charge :</h3>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattC1" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattKgC1" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Puissance Moy. : <div class="input-group"><input type="text" name="pMoyWattC1" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Moy. : <div class="input-group"><input type="text" name="pMoyWattKgC1" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Fréquence max. de pédalage : <div class="input-group"><input type="text" name="fMaxPedalageC1" class="form-control"><span class="input-group-addon">RPM</span></div><br/>
+				<h3>Deuxième charge :</h3>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattC2" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattKgC2" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Puissance Moy. : <div class="input-group"><input type="text" name="pMoyWattC2" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Moy. : <div class="input-group"><input type="text" name="pMoyWattKgC2" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Fréquence max. de pédalage : <div class="input-group"><input type="text" name="fMaxPedalageC2" class="form-control"><span class="input-group-addon">RPM</span></div><br/>
+				<h3>Troisième charge :</h3>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattC3" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattKgC3" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Puissance Moy. : <div class="input-group"><input type="text" name="pMoyWattC3" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Moy. : <div class="input-group"><input type="text" name="pMoyWattKgC3" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Fréquence max. de pédalage : <div class="input-group"><input type="text" name="fMaxPedalageC3" class="form-control"><span class="input-group-addon">RPM</span></div><br/>
+				<h2>Test Wingate :</h2>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattWingate" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattKgWingate" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Puissance Moy. : <div class="input-group"><input type="text" name="pMoyWattWingate" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Moy. : <div class="input-group"><input type="text" name="pMoyWattKgWingate" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Drop : <div class="input-group"><input type="text" name="drop" class="form-control"><span class="input-group-addon automatique" readonly="readonly">%</span></div><br/>
+				Fréquence cardiaque max. : <div class="input-group"><input type="text" name="fCardiaqueMax" class="form-control"><span class="input-group-addon">BPM</span></div><br/>
+				Fréquence max. de pédalage : <div class="input-group"><input type="text" name="fMaxWingate" class="form-control"><span class="input-group-addon">RPM</span></div><br/>
+				Fréquence max. de pédalage à partir de 3 min: <div class="input-group"><input type="text" name="gMax3minWingate" class="form-control"><span class="input-group-addon">RPM</span></div><br/>
+				<h2>Test PMA :</h2>
+				Durée du test : <div class="input-group"><input type="text" name="dureeTestMin" class="form-control"><span class="input-group-addon">minutes</span></div><br/>
+				Durée du test : <div class="input-group"><input type="text" name="dureeTestSec" class="form-control"><span class="input-group-addon">secondes</span></div><br/>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattPma" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts</span></div><br/>
+				Puissance Max. : <div class="input-group"><input type="text" name="pMaxWattKgPma" class="form-control"><span class="input-group-addon">watts/kg - 1</span></div><br/>
+				Puissance Max./surface du corps: <div class="input-group"><input type="text" name="pMaxSurfacePma" class="form-control"><span class="input-group-addon">watts m²</span></div><br/>
+				Puissance seuil : <div class="input-group"><input type="text" name="pSeuilWattPma" class="form-control"><span class="input-group-addon">watts</span></div><br/>
+				Puissance seuil : <div class="input-group"><input type="text" name="pSeuilWattKgPma" class="form-control automatique" readonly="readonly"><span class="input-group-addon">watts/kg-1</span></div><br/>
+				Fréquence FC max. : <div class="input-group"><input type="text" name="fcMaxPma" class="form-control"><span class="input-group-addon">BPM</span></div><br/>
+				Fréquence seuil : <div class="input-group"><input type="text" name="fSeuilMaxPma" class="form-control"><span class="input-group-addon">BPM</span></div><br/>
+				<input type="submit" value="Valider" class="btn btn-primary" />
+			</form>
+		</div>
+	</div>
+	<br />
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,166 @@
+.ConteneurFixedroite
+{
+  float:right;
+  height: 90%;
+  width:79%;
+  padding:3px;
+  background:#fff;
+}
+
+
+.ConteneurFixegauche
+{
+  float:left;
+  height: 90%;
+  width:20%;
+  padding:3px;
+  background:#fff;
+
+}
+.Contenu{
+  height:92%;
+  overflow:auto;
+  background:#fff;
+  border:solid;
+  border-color:#777;
+
+}
+
+.centerTxt {
+	text-align: center;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.center th {
+	text-align: center;
+}
+
+textarea {
+	resize:none;
+}
+	
+.centerTxt {
+	text-align: center;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.automatique {
+	background-color: lightgrey;
+	opacity: 0.5;
+}
+
+fieldset {
+	border: 1px solid #ddd;
+	margin: 0;
+	padding: 10px;       
+	position: relative;
+	border-radius:4px;
+	background-color:#f5f5f5;
+	padding-left:10px;
+}	
+
+legend {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom: 0px; 
+	width: 50%; 
+	border: 1px solid #ddd;
+	border-radius: 4px; 
+	padding: 5px 5px 5px 10px; 
+	background-color: #ffffff;
+}
+
+/* Etoile notation séance 
+.rating {
+	width: 440px;
+	margin: 0 auto 1em;
+	font-size: 50px;
+	overflow:hidden;
+}
+
+.rating a {
+	float:right;
+	text-decoration: none;
+	color: #aaa;
+	-webkit-transition: color .4s;
+	-moz-transition: color .4s;
+	-o-transition: color .4s;
+	transition: color .4s;
+}
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a		{
+	color: orange;
+	cursor: pointer;
+}
+*/
+.deco {
+	float: right;
+	font-weight: bold;
+}
+
+.aSimple {
+	text-decoration: none;
+	color: black;
+}
+
+textarea { 
+	resize:none; 
+}
+/*
+.notation {
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: underline;
+}
+*/
+
+#tutoriel {
+	float: left;
+	width: 500px;
+	height: 300px;
+	border: 1px solid #000;
+}
+
+#listCycle {
+	font-size: 1.5em;
+}
+
+.dateCharge {
+	font-size: 0.4em;
+	color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

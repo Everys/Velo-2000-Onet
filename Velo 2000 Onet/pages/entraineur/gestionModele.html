@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Velo 2000 Onet - Suivi des coureurs</TITLE>
+
+
+<script src="../../lib/jquery/jquery-3.2.1.min.js"></script>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../../images/favicon/favicon.ico">
+
+<!-- Lien bootstrap et jquery (pour menu) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Lien bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<script src="../../lib/bootstrap/bootstrap.min.js"></script>
+
+<!-- Lien CSS -->
+<link href="../../css/style.css" rel="stylesheet">
+
+<!-- Lien font awesome -->
+<link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+
+
+<!-- Import du plugin toggle button bootstrap -->
+<script src="../../lib/bootstrap-toggle-master/js/bootstrap-toggle.js"></script>
+<link href="../../lib/bootstrap-toggle-master/css/bootstrap-toggle.css" rel="stylesheet">
+	
+</HEAD>
+<BODY>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="suiviCoureur.html">Vélo 2000 Onet - Entraineur</a>
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="suiviCoureur.html">Suivi des cyclistes</a></li>
+			<!-- Menu déroulant pour la gestion des modèles -->
+			<li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Gestion des modèles<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="gestionPlannification.html">Plannification</a></li>
+                            <li><a href="gestionMacrocycle.html">Macrocycle</a></li>
+                            <li><a href="gestionMesocycle.html">Mésocycle</a></li>
+                            <li><a href="gestionMicrocycle.html">Microcycle</a></li>
+                        </ul>
+                    </li>
+			<li><a href="saisiePilote.html">Ajouter un cycliste</a></li>
+		</ul>
+		<ul class="nav navbar-nav deco">
+			<li><a href="#">Se déconnecter</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<h1><i class="fa fa-user-circle"></i> Génération modèles
+	
+	<div class="col-sm-offset-1 col-sm-10 col-sm-offset-1">
+		
+		<table class="table">
+			<tr>
+				<th>Microcycle</th>
+				<th>Titre</th>
+				<th>Type</th>
+				<th>Supprimer</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>titre1</td>
+				<td>type1</td>
+				<td><i class="fa fa-times" aria-hidden="true"></i></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>titre2</td>
+				<td>type2</td>
+				<td><i class="fa fa-times" aria-hidden="true"></i></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>titre3</td>
+				<td>type3</td>
+				<td><i class="fa fa-times" aria-hidden="true"></i></td>
+			</tr>
+			<tr>
+				<td colspan="4"><i class="fa fa-plus" aria-hidden="true"></i></td>
+			</tr>
+		</table>
+		
+	</div>
+	
+	
+	<!--
+	
+	<h2>Microcycle</h2>
+	<form>
+	Titre : <input type="text" name="titre" class="form-control" /><br />
+	Type : <input type="text" name="type" class="form-control" /><br />
+	
+		<table class="table">
+			<tr>
+				<th>jour</th>
+				<th>titre</th>
+				<th>contenu</th>
+			</tr>
+			<tr>
+				<td>lundi</td>
+				<td><input type="text" name="titreLundi" class="form-control" /></td>
+				<td><input type="text" name="contenuLundi" class="form-control" /></td>
+			</tr>
+			<tr>
+				<td>dimanche</td>
+				<td><input type="text" name="titreDimanche" class="form-control" /></td>
+				<td><input type="text" name="contenuDimanche" class="form-control" /></td>
+			</tr>
+		</table>
+		<input type="submit" value="Ajouter" class="btn btn-success">
+	</form>
+	<br />
+	<h2>Mésocycle</h2>
+	<form>
+	Thème : <input type="text" name="theme" class="form-control" /><br />
+	Durée : <input type="text" name="duree" class="form-control" /><br />
+	</form>
+	
+-->
+	
+</div>
+
+
+</BODY>
+</HTML>

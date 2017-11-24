@@ -1,0 +1,281 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Velo 2000 Onet - Suivi des coureurs</TITLE>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../../images/favicon/favicon.ico">
+
+<!-- Lien bootstrap et jquery (pour menu) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Lien bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+<!-- Lien CSS -->
+<link href="../../css/style.css" rel="stylesheet">
+
+<!-- Lien font awesome -->
+<link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+
+
+<!-- Import du plugin toggle button bootstrap -->
+<link href="../../lib/bootstrap-toggle-master/css/bootstrap-toggle.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../../lib/bootstrap-toggle-master/js/bootstrap-toggle.js"></script>
+	
+</HEAD>
+<BODY>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="suiviCoureur.html">Vélo 2000 Onet - Entraineur</a>
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="suiviCoureur.html">Suivi des cyclistes</a></li>
+			<!-- Menu déroulant pour la gestion des modèles -->
+			<li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Gestion des modèles<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="gestionPlannification.html">Plannification</a></li>
+                            <li><a href="gestionMacrocycle.html">Macrocycle</a></li>
+                            <li><a href="gestionMesocycle.html">Mésocycle</a></li>
+                            <li><a href="gestionMicrocycle.html">Microcycle</a></li>
+                        </ul>
+                    </li>
+			<li><a href="saisiePilote.html">Ajouter un cycliste</a></li>
+		</ul>
+		<ul class="nav navbar-nav deco">
+			<li><a href="#">Se déconnecter</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<h1><i class="fa fa-user-circle"></i> Informations générales 
+	<input type="checkbox" checked data-toggle="toggle" data-on="Visible" data-off="Non visible" data-onstyle="success" data-offstyle="danger"></h1>
+	
+	<br />
+	
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-6 col-sm-offset-7">
+			<table class="table tableCenter">
+				<tr>
+					<td>Nom</td>
+					<td>Sophia</td>
+				</tr>
+				<tr>
+					<td>Prénom</td>
+					<td>Tirana</td>
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td>11 ans</td>
+				</tr>
+				<tr>
+					<td>Poids</td>
+					<td>40 kg</td>
+				</tr>
+				<tr>
+					<td>Taille</td>
+					<td>150 cm</td>
+				</tr>
+				<tr>
+					<td>FC Max</td>
+					<td>
+						<div class="input-group col-sm-5">
+							<input type="text" class="form-control" value="120">
+							<span class="input-group-addon">Watts</span>
+						</div>
+					</td>
+				</tr> 
+				<tr>
+					<td>PMA</td>
+					<td>
+						<div class="input-group col-sm-5">
+							<input type="text" class="form-control" value="180">
+							<span class="input-group-addon">Watts</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>PMax</td>
+					<td>100 Watts</td>
+				</tr>
+				
+				<tr>
+					<td>Zones cardiaques <i class="fa fa-refresh"></i></td>
+					<td>I4</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<h1><i class="fa fa-balance-scale" aria-hidden="true"></i> Points forts / Points faibles 
+	<input type="checkbox" checked data-toggle="toggle" data-on="Visible" data-off="Non visible" data-onstyle="success" data-offstyle="danger"></h1>
+	<br />
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-10 col-sm-offset-1">
+			<div class="form-group">
+				<label for="comment">Point forts :</label>
+				<textarea class="form-control" rows="5" id="comment"></textarea>
+				<br />
+				<br />
+				<label for="comment">Point faibles :</label>
+				<textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
+		</div>
+	</div>
+	
+	<h1><i class="fa fa-star" aria-hidden="true"></i> Notation des qualités physiques 
+	<input type="checkbox" checked data-toggle="toggle" data-on="Visible" data-off="Non visible" data-onstyle="success" data-offstyle="danger"></h1>
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-4 col-sm-offset-7">
+		<br />
+			<div class="form-group">
+				<table class="table">
+				<tr>
+					<td>Endurance :</td>
+					<td><select name="noteEndurance">
+						<option>1</option> 
+						<option>2</option> 
+						<option>3</option> 
+						<option>4</option> 
+						<option>5</option> 
+						<option>6</option> 
+						<option>7</option> 
+						<option>8</option> 
+						<option>9</option> 
+						<option>10</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Force :</td>
+					<td><select name="noteForce">
+						<option>1</option> 
+						<option>2</option> 
+						<option>3</option> 
+						<option>4</option> 
+						<option>5</option> 
+						<option>6</option> 
+						<option>7</option> 
+						<option>8</option> 
+						<option>9</option> 
+						<option>10</option>
+					</select></td></td>
+				</tr>
+				<tr>
+					<td>Vitesse :</td>
+					<td><select name="noteVitesse">
+						<option>1</option> 
+						<option>2</option> 
+						<option>3</option> 
+						<option>4</option> 
+						<option>5</option> 
+						<option>6</option> 
+						<option>7</option> 
+						<option>8</option> 
+						<option>9</option> 
+						<option>10</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Souplesse :</td>
+					<td><select name="noteSouplesse">
+						<option>1</option> 
+						<option>2</option> 
+						<option>3</option> 
+						<option>4</option> 
+						<option>5</option> 
+						<option>6</option> 
+						<option>7</option> 
+						<option>8</option> 
+						<option>9</option> 
+						<option>10</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Coordination :</td>
+					<td><select name="noteCoordination">
+						<option>1</option> 
+						<option>2</option> 
+						<option>3</option> 
+						<option>4</option> 
+						<option>5</option> 
+						<option>6</option> 
+						<option>7</option> 
+						<option>8</option> 
+						<option>9</option> 
+						<option>10</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Technique :</td>
+					<td><select name="noteTechnique">
+						<option>1</option> 
+						<option>2</option> 
+						<option>3</option> 
+						<option>4</option> 
+						<option>5</option> 
+						<option>6</option> 
+						<option>7</option> 
+						<option>8</option> 
+						<option>9</option> 
+						<option>10</option>
+					</select></td>
+				</tr>
+				</table>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<h1><i class="fa fa-bicycle" aria-hidden="true"></i> Fiches de tests
+	<input type="checkbox" checked data-toggle="toggle" data-on="Visible" data-off="Non visible" data-onstyle="success" data-offstyle="danger"></h1>
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-4 col-sm-offset-7">
+		<br />
+			<table class="table">
+				<tr>
+					<th>Date</th>
+					<th>Fiche de test</th>
+				</tr>
+				<tr>
+					<td>15/10/2017</td>
+					<td><a href="saisieFormulaireTest.html"><i class="fa fa-bicycle" aria-hidden="true"></a></td>
+				</tr>
+				<tr>
+					<td>28/10/2017</td>
+					<td><a href="saisieFormulaireTest.html"><i class="fa fa-bicycle" aria-hidden="true"></a></td>
+				</tr>
+				<tr>
+					<td>05/11/2017</td>
+					<td><a href="saisieFormulaireTest.html"><i class="fa fa-bicycle" aria-hidden="true"></a></td>
+				</tr>
+				<tr>
+					<td colspan="2"><a href="saisieFormulaireTest.html"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="col-sm-offset-8 col-sm-4">
+			<button class="btn btn-success btn-block">Enrergistrer</button>
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+	
+</div>
+
+
+
+</BODY>
+</HTML>

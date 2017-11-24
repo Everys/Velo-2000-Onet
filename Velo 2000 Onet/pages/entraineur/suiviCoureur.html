@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Velo 2000 Onet - Suivi des coureurs</TITLE>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../images/favicon/favicon.ico">
+
+<!-- Lien bootstrap et jquery (pour menu) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- favicon -->
+<link rel="icon" type="image/ico" href="../../images/favicon/favicon.ico">
+
+<!-- Lien bootstrap -->
+<link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+<!-- Lien CSS -->
+<link href="../../css/style.css" rel="stylesheet">
+
+<!-- Lien font awesome -->
+<link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+</HEAD>
+<BODY>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="suiviCoureur.html">Vélo 2000 Onet - Entraineur</a>
+			
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="suiviCoureur.html">Suivi des cyclistes</a></li>
+			<!-- Menu déroulant pour la gestion des modèles -->
+			<li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Gestion des modèles<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+							<li><a href="gestionPlannification.html">Plannification</a></li>
+                            <li><a href="gestionMacrocycle.html">Macrocycle</a></li>
+                            <li><a href="gestionMesocycle.html">Mésocycle</a></li>
+                            <li><a href="gestionMicrocycle.html">Microcycle</a></li>
+                        </ul>
+                    </li>
+			<li><a href="saisiePilote.html">Ajouter un cycliste</a></li>
+		</ul>
+		<ul class="nav navbar-nav deco">
+			<li><a href="#">Se déconnecter</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Nom</th>
+				<th>Prénom</th>
+				<th>Catégorie</th>
+				<th>Fiche pilote</th>
+				<th>Charge d'entrainement</th>
+				<th>Modèle</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Sophia</td>
+				<td>Tirana</td>
+				<td>Benjamins </td>
+				<td><a href="fichePilote.html"><i class="fa fa-address-card-o"></i></a></td>
+				<td><a href="chargeEntrainement.html"><i class="fa fa-bar-chart"></i></a></td>
+				<td><a href="affecterModele.html"><i class="fa fa-plus"></i></a></td>
+			</tr>
+			<tr>
+				<td>Volcano</td>
+				<td>Logue</td>
+				<td>Espoirs</td>
+				<td><a href="#"><i class="fa fa-address-card-o"></i></a></td>
+				<td><a href="chargeEntrainement.html"><i class="fa fa-bar-chart"></i></a></td>
+				<td><a href="affecterModele.html"><i class="fa fa-plus"></i></a></td>
+			</tr>
+			<tr>
+				<td>Fraysse</td>
+				<td>Marcel</td>
+				<td>Master 5</td>
+				<td><a href="#"><i class="fa fa-address-card-o"></i></a></td>
+				<td><a href="chargeEntrainement.html"><i class="fa fa-bar-chart"></i></a></td>
+				<td><a href="affecterModele.html"><i class="fa fa-plus"></i></a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+</BODY>
+</HTML>
