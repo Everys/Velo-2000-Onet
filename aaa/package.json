@@ -1,0 +1,19 @@
+{
+  "name": "velo2000onet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "knex": "^0.14.1",
+    "nodemon": "^1.12.1",
+    "pg": "^7.4.0"
+  }
+}
